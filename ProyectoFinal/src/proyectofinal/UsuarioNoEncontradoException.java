@@ -5,9 +5,13 @@
 package proyectofinal;
 
 /**
- *
- * @author usuario
+ * Excepción personalizada para cuando un usuario no se encuentra.
  */
-public class UsuarioNoEncontradoException {
+public class UsuarioNoEncontradoException extends Exception {
     
+    // Constructor con mensaje personalizado
+    public UsuarioNoEncontradoException(String mensaje) {
+        super(mensaje); // Propagación del mensaje al constructor padre (Exception)
+    }
 }
+
